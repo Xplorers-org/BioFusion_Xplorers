@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+*.log
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+pip-wheel-metadata/
+
+# models
+scaler.pkl
+feature_names.pkl
+ensemble_model.pkl
+
+# IDEs and editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
+.env.*
+
+# FastAPI specific (if using Uvicorn reload)
+*.db
+*.sqlite3
+*.bak
+
+# Docker
+*.pid
+docker-compose.override.yml
+__docker_volume__/
+
+# Testing
+htmlcov/
+.tox/
+.pytest_cache/
+coverage.xml
+nosetests.xml
+test-results/
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+
+# Pydantic settings
+settings.json
+
+# Optional: model artifacts
+*.pkl
+*.h5
+*.pt
+*.onnx

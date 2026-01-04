@@ -1,0 +1,126 @@
+# =========================
+# General
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.log
+*.pot
+*.pyc
+*.pkl
+*.sqlite3
+*.db
+*.DS_Store
+*.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+*.swp
+*.swo
+*.whl
+build-log.txt
+# =========================
+# OS / Editor
+# =========================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.bak
+*.tmp
+*.log
+*.orig
+
+# =========================
+# Python / FastAPI backend
+# =========================
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+backend/__pycache__/
+backend/*.pyc
+
+# PyInstaller
+build/
+dist/
+*.spec
+
+# Coverage / test reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+*.hypothesis/
+.pytest_cache/
+pytestdebug.log
+
+# Pydantic or FastAPI cache
+__pydantic_cache__/
+
+# =========================
+# Node / Next.js frontend
+# =========================
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Builds
+.next/
+out/
+dist/
+build/
+
+# Production
+.next/
+.next/static/
+.next/cache/
+.next/server/
+.vercel/
+
+# Env files
+frontend/.env*
+!.env.example
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Misc
+*.tsbuildinfo
+*.tgz
+
+# =========================
+# Docker
+# =========================
+docker-compose.override.yml
+.docker/
+*.pid
+*.seed
+*.pid.lock
+
+# =========================
+# Coverage / Testing / Misc
+# =========================
+coverage/
+junit.xml
+*.test.js
+*.test.ts
+*.spec.js
+*.spec.ts

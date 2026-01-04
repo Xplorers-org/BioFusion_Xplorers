@@ -1,0 +1,24 @@
+version: '3.8'  # Docker Compose version
+
+services:
+  backend:  # Name of the backend service (used in networking)
+    build:
+      context: .  # Build from current dir
+      dockerfile: Dockerfile.backend
+    ports:
+      - "8000:8000"  # Map container port 8000 to host 8000
+    environment:
+      - DEBUG=true  # Optional: Your env vars
+
+  frontend:  # Name of the frontend service
+    build:
+      context: .  # Build from current dir
+      dockerfile: Dockerfile.frontend
+      args:
+        - NEXT_PUBLIC_API_URL=http://localhost:8000
+    ports:
+      - "3000:3000"  # Map container port 3000 to host 3000
+    depends_on:
+      - backend  # Start backend first
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:8000  # Browser-accessible backend URL
