@@ -1,0 +1,29 @@
+# syntax=docker/dockerfile:1
+# Start from a slim Python image (lightweight)
+FROM python:3.12-slim
+
+# Install system dependencies required by LightGBM, pydub and other ML libraries
+RUN apt-get update && apt-get install -y \
+    libgomp1 \
+    ffmpeg \
+    && rm -rf /var/lib/apt/lists/*
+
+# Set the working directory inside the container
+WORKDIR /app
+
+# Copy the requirements.txt file into the container
+COPY backend/requirements.txt .
+
+# Install the required Python packages with increased timeout and retries
+# Use BuildKit cache mount to persist pip cache across builds
+RUN --mount=type=cache,target=/root/.cache/pip \
+    pip install --timeout=2000 --retries=10 -r requirements.txt
+
+# Copy all backend code into /app directory
+COPY backend/ ./
+
+# Expose port 8000 (where FastAPI runs)
+EXPOSE 8000
+
+# Run the FastAPI app with Uvicorn
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
