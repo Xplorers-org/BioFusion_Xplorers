@@ -1,0 +1,80 @@
+[
+  {
+    "id": "rec_1760187468945_wz0w08",
+    "userId": "default-user",
+    "fileName": "thum_hi_hoo.mp3",
+    "fileUrl": "/uploads/recordings/1760187468945-thum_hi_hoo.mp3",
+    "fileSize": 10687824,
+    "mimeType": "audio/mpeg",
+    "duration": 334,
+    "createdAt": "2025-10-11T12:57:48.961Z",
+    "status": "completed",
+    "metadata": {
+      "patientInfo": {
+        "fullName": "Akila Fernando",
+        "age": 22,
+        "gender": "male",
+        "testTime": 31
+      }
+    }
+  },
+  {
+    "id": "rec_1760184698621_eal08b",
+    "userId": "default-user",
+    "fileName": "recording-1760184697713.webm",
+    "fileUrl": "/uploads/recordings/1760184698621-recording-1760184697713.webm",
+    "fileSize": 43766,
+    "mimeType": "audio/webm",
+    "duration": 1,
+    "createdAt": "2025-10-11T12:11:38.623Z",
+    "status": "completed",
+    "metadata": {
+      "patientInfo": {
+        "fullName": "Akila Fernando",
+        "age": 5,
+        "gender": "male",
+        "testTime": 3
+      }
+    }
+  },
+  {
+    "id": "rec_1760183596072_wqfky",
+    "userId": "default-user",
+    "fileName": "thum_hi_hoo.mp3",
+    "fileUrl": "/uploads/recordings/1760183596072-thum_hi_hoo.mp3",
+    "fileSize": 10687824,
+    "mimeType": "audio/mpeg",
+    "duration": 334,
+    "createdAt": "2025-10-11T11:53:16.168Z",
+    "status": "completed",
+    "metadata": {
+      "patientInfo": {
+        "fullName": "mavi mihi",
+        "age": 21,
+        "gender": "male",
+        "testTime": 1
+      }
+    }
+  },
+  {
+    "id": "rec_1760181053223_0ybpr9",
+    "userId": "default-user",
+    "fileName": "recording-1760181052579.webm",
+    "fileUrl": "/uploads/recordings/1760181053223-recording-1760181052579.webm",
+    "fileSize": 70814,
+    "mimeType": "audio/webm",
+    "duration": 2,
+    "createdAt": "2025-10-11T11:10:53.225Z",
+    "status": "completed",
+    "metadata": {
+      "patientInfo": {
+        "fullName": "Akila Fernando",
+        "age": "21",
+        "gender": "male",
+        "email": "akila@gmail.com",
+        "phone": "+94752482982",
+        "medicalHistory": ""
+      }
+    }
+  }
+]

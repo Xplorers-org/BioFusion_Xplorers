@@ -1,0 +1,81 @@
+// ...existing code...
+# Node modules
+node_modules/
+
+# Next.js / build outputs
+.next/
+out/
+build/
+.next/cache/
+.next/static/
+.next/trace
+
+# Vercel / deployment
+.vercel/
+.vercel/output/
+
+# Environment files (do NOT commit secrets)
+.env
+.env.*.local
+.env.local
+.env.test.local
+.env.production.local
+
+# Lockfiles & package managers (keep lockfiles committed; ignore package manager caches)
+.pnp
+.pnp.js
+.yarn/install-state.gz
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/patches
+.yarn/releases
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.log
+
+# TypeScript build info & Next types
+*.tsbuildinfo
+next-env.d.ts
+
+# Editor / OS
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+.DS_Store
+Thumbs.db
+
+# Testing / coverage
+coverage/
+jest-report/
+.vitest/
+
+# Cache / temp
+.cache/
+.cache-loader/
+.parcel-cache/
+.tmp/
+.temp/
+
+# Build artifacts / distributions
+dist/
+dist-*/
+
+# Misc
+.eslintcache
+*.tgz
+*.bak
+*.swp
+*.pid
+node-repl-history
+
+# Ignore local secrets for common CI systems
+.envrc
+.terraform/
+.terraform.lock.hcl
