@@ -14,9 +14,7 @@ __pycache__/
 *.db
 *.DS_Store
 *.env
-.env.*
 !.env.example
-.vscode/
 .idea/
 *.swp
 *.swo
@@ -124,3 +122,4 @@ junit.xml
 *.test.ts
 *.spec.js
 *.spec.ts
+config.bat
